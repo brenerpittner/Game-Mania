@@ -1,0 +1,221 @@
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 20;
+}
+
+a, p {
+    color:white;
+    font-family: arial;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.flex_between_center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex_column_evenly {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.flex_column_between {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.flex_center {
+    display: flex;
+    justify-content: center;
+}
+
+.flex_evenly {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* watermark */
+.watermark {
+    width: 350px;
+    height: 263px;
+}
+
+/* HEADER */
+.container-header {
+    height: 80px;
+    background: linear-gradient(90deg, #910DFF 0%, #000000 100%);
+}
+
+.container_menu_main {
+    width: 800px;
+    padding-right: 100px;
+}
+
+.logo {
+    position:absolute;
+    top:-1px;
+    left:360px;
+    height: 130px;
+    z-index: 1;
+}
+
+/* BANNER */
+.container-banner {
+    height: 700px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background: linear-gradient(180deg, #000000 0%, #7914CC 100%);
+}
+
+.banner{
+    transform: rotateY(180deg);
+    border-radius: 50px;
+    height: 540px;
+    margin: 35px;
+ }
+
+.container-text {
+    height: 540px;
+}
+
+.text_span {
+    font-size: 100px;
+    font-weight: bolder;
+}
+
+/* Fabricantes */
+.container-fab {
+    height: 100px;
+    background: linear-gradient(90deg, #910DFF 0%, #000000 100%);
+}
+
+.fab {
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    mix-blend-mode: color-burn;
+}
+
+.fab-nvidia {
+    height: 130%;  
+}
+
+/* Promoções - geral */
+.container_itens {
+    height: 700px;
+    background: linear-gradient(90deg, #910DFF 0%, #000000 100%);
+}
+
+/* Promoções - menu */
+.container_menu_sec {
+    height: 630px;
+}
+
+.button_menu_sec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 70px;
+    border-radius: 15px;
+    background: linear-gradient(86.11deg, #910DFF 0%, #000000 35.8%, #000000 68.57%, #45067A 100%);
+}
+
+/* Promoções - itens */
+.container-itens {
+    width: 230px;
+    height: 630px;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: linear-gradient(180deg, #000000 0%, #7914CC 100%);  
+}
+
+.img {
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+}
+
+.tit { 
+    font-size: 30px;
+}
+
+.desc {
+    font-size: 16px;
+}
+
+.desc_link {
+    color: blue;
+    font-size: 12px;
+}
+
+.price_olde {
+    color: red;
+    text-decoration: line-through;
+}
+
+.button-send {
+    background-color: green;
+    border-radius: 15px;
+    padding: 15px 32px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* About - geral */
+.container_about {
+    height: 400px;
+    background: linear-gradient(86.11deg, #910DFF 0%, #000000 96.81%);  
+}
+
+.font_about{
+    display: flex;
+    text-align: center;
+}
+
+
+/* Footer - geral */
+.container_footer {
+    height: 360px;
+    background: linear-gradient(86.11deg, #910DFF 0%, #000000 96.81%);  
+}
+
+/* Footer - pagamentos */
+.flags {
+    width: 42px;
+    height: 27px;
+}
+
+/* Footer - aplicativos */
+.apps {
+    width: 135px;
+    height: 40px;
+}
+
+/* Footer - redes sociais */
+.container_column{
+    padding-top: 50px;
+}
+
+.social {
+    width: 34px;
+    height: 34px;
+}
+
+/* copyright */
+.container_copyright {
+    height: 30px;
+    background: linear-gradient(86.11deg, #910DFF 0%, #000000 96.81%);
+}
+
+.text_copyright p{
+    font-size: 12px;
+}
