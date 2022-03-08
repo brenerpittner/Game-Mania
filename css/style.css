@@ -42,6 +42,9 @@ a, p {
 
 /* watermark */
 .watermark {
+    position:absolute;
+    z-index: 1;
+    right:50px;
     width: 350px;
     height: 263px;
 }
@@ -60,14 +63,21 @@ a, p {
 .logo {
     position:absolute;
     top:-1px;
-    left:360px;
+    left:50px;
     height: 130px;
     z-index: 1;
 }
 
+.menu {
+    padding-right: 40px;
+}
+
+
 /* BANNER */
 .container-banner {
-    height: 700px;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
     padding-left: 40px;
     padding-right: 40px;
     background: linear-gradient(180deg, #000000 0%, #7914CC 100%);
@@ -81,32 +91,33 @@ a, p {
  }
 
 .container-text {
-    height: 540px;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .text_span {
-    font-size: 100px;
+    font-size: 3em;
     font-weight: bolder;
 }
 
 /* Fabricantes */
 .container-fab {
-    height: 100px;
+    height: auto;
     background: linear-gradient(90deg, #910DFF 0%, #000000 100%);
 }
 
-.fab {
-    display: flex;
-    justify-content: space-between;
+.container-fab img{
     height: 90px;
     mix-blend-mode: color-burn;
 }
 
-.fab-nvidia {
-    height: 130%;  
+/* Promoções - geral */
+.container_promo {
+    height: auto;
+    background: linear-gradient(90deg, #910DFF 0%, #000000 100%);
 }
 
-/* Promoções - geral */
 .container_itens {
     height: 700px;
     background: linear-gradient(90deg, #910DFF 0%, #000000 100%);
@@ -114,7 +125,7 @@ a, p {
 
 /* Promoções - menu */
 .container_menu_sec {
-    height: 630px;
+    height: auto;
 }
 
 .button_menu_sec {
@@ -172,7 +183,7 @@ a, p {
 
 /* About - geral */
 .container_about {
-    height: 400px;
+    height: auto;
     background: linear-gradient(86.11deg, #910DFF 0%, #000000 96.81%);  
 }
 
@@ -184,7 +195,7 @@ a, p {
 
 /* Footer - geral */
 .container_footer {
-    height: 360px;
+    height: auto;
     background: linear-gradient(86.11deg, #910DFF 0%, #000000 96.81%);  
 }
 
@@ -212,10 +223,72 @@ a, p {
 
 /* copyright */
 .container_copyright {
-    height: 30px;
+    height: auto;
     background: linear-gradient(86.11deg, #910DFF 0%, #000000 96.81%);
 }
 
 .text_copyright p{
     font-size: 12px;
+}
+
+@media screen and (max-width: 1620px) {
+    /* BANNER */
+    .container-banner{
+        height: 100%;
+    }
+    .banner {
+        width: 100%;
+        height: 70%;
+        margin: 5px;
+        opacity: 0.4;
+    }
+    .container-text{
+        position: absolute;
+        top: 100px;
+        left:80px;
+    }
+    .container-text p{
+        font-size: 1.7em;
+    }
+}
+
+
+@media screen and (min-width: 1000px) {
+    /* HEADER */
+    .menu{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    /* HEADER */
+    .container_menu_main {
+        display: none;
+    }
+
+    /* Promoções - geral */
+    .container_promo .container-itens{
+        display: none;
+    }
+    .container_promo .container_menu_sec{
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .container-text p{
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .container-text p{
+        font-size: 0.5em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .container-text p{
+        font-size: 0.3em;
+    }
 }
