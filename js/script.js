@@ -10,6 +10,7 @@ $(document).ready(function(){
 
     function mudarSlide(){
         // Remove o slide anterior
+        
         if(slideAtual >0){
             $("#carousel").removeClass(listaSlides[slideAtual -1])
         } else if (slideAtual ==0){
